@@ -26,7 +26,6 @@
 #define PRIORITY_HI 0x0 //00  // high priority
 #define PRIORITY_MED 0x200 //01 // medium priority
 #define PRIORITY_LOW 0x400 //10 // low priority
-
 //Mode Identifier
 #define MID_FROM 0 //the NID contains the value of the node that sent the message.
 #define MID_TO 0x100 //the NID contains the value of the node that the message is destined
@@ -34,10 +33,11 @@
 ////transmit request register
 #define _0x20Buf 0
 #define _0x20TXBusy C1TR01CONbits.TXREQ0
+
 #define _0x25Buf 1
 #define _0x25TXBusy C1TR01CONbits.TXREQ1
 
-//These are not used, redefine as needed.
+//THese are not used, redefine as needed.
 #define NOTUSEDBUF2 2
 #define NOTUSEDBUF2TXBusy C1TR23CONbits.TXREQ2
 #define NOTUSEDBUF3 3
@@ -50,5 +50,6 @@
 #define NOTUSEDBUF6TXBusy C1TR67CONbits.TXREQ6
 #define NOTUSEDBUF7 7
 #define NOTUSEDBUF7TXBusy C1TR67CONbits.TXREQ7
+
 
 #endif
